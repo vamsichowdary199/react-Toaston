@@ -1,0 +1,30 @@
+.custom-alert {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  max-width: 920px;
+  transform: translateY(100%);
+  animation: toastAnimation 0.4s ease forwards;
+}
+.alert-close {
+  animation: toastCloseAnimation 0.4s ease forwards;
+}
+
+@keyframes toastAnimation {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-30%);
+  }
+}
+@keyframes toastCloseAnimation {
+  0% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
